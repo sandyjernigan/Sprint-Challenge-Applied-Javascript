@@ -44,8 +44,9 @@ Edit this document to include your answers after each question. Make sure to lea
 
 > An event listener is the callback when an event happens. The event listener will watch the page for a event to occur, if this event happens then the callback will run.
 
-
 4. Why would we convert a NodeList into an Array?
+
+> We concert a Nodelist into an array to be able to use the array methods. This can be easier to callback and sort thru. It is not always necessary to convert the nodelist. For example, if you only want to loop thru each element a .forEach will work on the Nodelist. However if you want to call just one element sometimes converting to the array can be eaiser to callback. Also, .filter, .map, and other array methods will not work with the Nodelist, so converting to an array is very useful when you want to use these methods.
 
 5. What is a component?
 
