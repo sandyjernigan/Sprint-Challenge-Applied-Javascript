@@ -12,3 +12,13 @@ let carousel = document.querySelector();
     5. Think of how you would animate this compoennt. Make the cards slide in and out, or fade. It's up to you!
     6. Have fun!
 */
+
+// Reference to the carousel
+const carousel = document.querySelector(`.carousel`);
+
+// Reference to the images
+const carouselImages = document.querySelectorAll(`.carousel img`);
+
+// Current Index
+let carouselIndex = 0;
+
