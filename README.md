@@ -42,6 +42,9 @@ Edit this document to include your answers after each question. Make sure to lea
 
 3. What is an event listener?
 
+> An event listener is the callback when an event happens. The event listener will watch the page for a event to occur, if this event happens then the callback will run.
+
+
 4. Why would we convert a NodeList into an Array?
 
 5. What is a component?
