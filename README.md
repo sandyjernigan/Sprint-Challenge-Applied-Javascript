@@ -50,6 +50,9 @@ Edit this document to include your answers after each question. Make sure to lea
 
 5. What is a component?
 
+> A component is the building block to modern application development. This uses HTML, CSS, and/or Javascript brought together for reuse in the website or application. 
+If a website or application has a navagation made up of buttons, you can use a component to iterate over each button (regardless of the number of buttons) and apply styling or reactions as desired.
+
 ### Git Set up
 
 * [ ] Fork the project into your GitHub user account
