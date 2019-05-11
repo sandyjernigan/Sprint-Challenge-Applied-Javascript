@@ -32,6 +32,10 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+> "The DOM is an object representation of the html elements of a webpage." 
+> This being said, the DOM is not a html page. However, it is a collection of all the different elements on the webpage.
+> The DOM is language neutral so more than one language can select and update elements displaying with the DOM. 
+
 2. What is an event?
 
 3. What is an event listener?
