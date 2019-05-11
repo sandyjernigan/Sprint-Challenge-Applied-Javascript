@@ -38,6 +38,8 @@ Edit this document to include your answers after each question. Make sure to lea
 
 2. What is an event?
 
+> An event is an action that occurs on the webpage. This can be anything from mouse clicks, page load, page online/offline, form responses, print events, etc.
+
 3. What is an event listener?
 
 4. Why would we convert a NodeList into an Array?
