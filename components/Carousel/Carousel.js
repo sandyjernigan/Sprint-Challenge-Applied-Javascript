@@ -58,8 +58,13 @@ const rightButton = document.querySelector(`.right-button`);
 
         // Turn off display on current image
         carouselImg[carouselIndex].style.display = "none";
+
         // Update index to next image
-        carouselIndex++;
+            // First check index, if this is last image in array go to first image in array else go to next image
+            if (carouselIndex == carouselImg.length - 1) {
+                carouselIndex = 0;
+            } else { carouselIndex++; }
+        
         // Turn on display on next image
         carouselImg[carouselIndex].style.display = "flex";
     });
