@@ -38,8 +38,13 @@ let leftButton = document.querySelector(`.left-button`);
 
         // Turn off display on current image
         carouselImg[carouselIndex].style.display = "none";
-        // Update index to next image
-        carouselIndex--;
+
+        // Update index to previous image
+            // First check index, if 0 go to last image in array else go back 1 image
+            if (carouselIndex == 0) {
+                carouselIndex = carouselImg.length - 1;
+            } else { carouselIndex--; }
+            
         // Turn on display on next image
         carouselImg[carouselIndex].style.display = "flex";
     });
