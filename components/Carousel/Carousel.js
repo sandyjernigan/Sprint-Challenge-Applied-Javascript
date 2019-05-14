@@ -1,3 +1,12 @@
+/* If You've gotten this far, you're on your own! Although we will give you some hints:
+    1. You will need to grab a reference to the carousel, and in it grab the left and right buttons
+    2. You will need to grab a reference to all of the images
+    3. Create a current index
+    4. Those buttons are gonna need some click handlers.
+    5. Think of how you would animate this compoennt. Make the cards slide in and out, or fade. It's up to you!
+    6. Have fun!
+*/
+
 // Carousel constructor
 class Carousel {
     constructor(img){
@@ -34,15 +43,12 @@ const rightButton = document.querySelector(`.right-button`);
 
     // Right Button Click Event
     rightButton.addEventListener('click', () => {
-        // Move Forward
-        // console.log("Right Button");
-    });
+        // Move Forward to next image
 
-/* If You've gotten this far, you're on your own! Although we will give you some hints:
-    1. You will need to grab a reference to the carousel, and in it grab the left and right buttons
-    2. You will need to grab a reference to all of the images
-    3. Create a current index
-    4. Those buttons are gonna need some click handlers.
-    5. Think of how you would animate this compoennt. Make the cards slide in and out, or fade. It's up to you!
-    6. Have fun!
-*/
+        // Turn off display on current image
+        carouselImg[carouselIndex].style.display = "none";
+        // Update index to next image
+        carouselIndex ++;
+        // Turn on display on next image
+        carouselImg[carouselIndex].style.display = "flex";
+    });
