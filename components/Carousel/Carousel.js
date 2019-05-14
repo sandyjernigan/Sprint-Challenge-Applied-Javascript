@@ -34,8 +34,14 @@ let leftButton = document.querySelector(`.left-button`);
 
     // Left Button Click Event
     leftButton.addEventListener('click', () => {
-        // Move Backwards
-        console.log("Left Button");
+        // Move Backwards to previous image
+
+        // Turn off display on current image
+        carouselImg[carouselIndex].style.display = "none";
+        // Update index to next image
+        carouselIndex--;
+        // Turn on display on next image
+        carouselImg[carouselIndex].style.display = "flex";
     });
 
 // Right Button Reference
@@ -48,7 +54,7 @@ const rightButton = document.querySelector(`.right-button`);
         // Turn off display on current image
         carouselImg[carouselIndex].style.display = "none";
         // Update index to next image
-        carouselIndex ++;
+        carouselIndex++;
         // Turn on display on next image
         carouselImg[carouselIndex].style.display = "flex";
     });
