@@ -1,3 +1,4 @@
+// Carousel constructor
 class Carousel {
     constructor(img){
         // assign this.img to the carousel image DOM reference
@@ -9,33 +10,33 @@ class Carousel {
 let carousel = document.querySelector(`.carousel`);
 console.log(carousel);
 
-// // Reference to the images
-// const carouselImages = document.querySelectorAll(`.carousel img`).forEach( img => new Carousel(img));
+// Reference to the images
+const carouselImages = document.querySelectorAll(`.carousel img`).forEach( img => new Carousel(img));
 
-// // Current Index
-// let carouselIndex = 0;
+// Reference to the images - Array
+const carouselImg = Array.from(document.querySelectorAll(`.carousel img`));
+
+// Current Index
+let carouselIndex = 0;
+carouselImg[carouselIndex].style.display = "flex";
 
 // Left Button Reference
-// let leftButton = document.querySelector(`.left-button`);
+let leftButton = document.querySelector(`.left-button`);
 
-// // Left Button Click Event
-// leftButton.addEventListener('click', () => {
-//     console.log("left button clicked");
-// });
+    // Left Button Click Event
+    leftButton.addEventListener('click', () => {
+        // Move Backwards
+        console.log("Left Button");
+    });
 
-// function moveBackwards(){
-//     console.log("left button clicked");
-// }
+// Right Button Reference
+const rightButton = document.querySelector(`.right-button`);
 
-// // Right Button Reference
-// const rightButton = document.querySelector(`.right-button`);
-
-// // Right Button Click Event
-// leftButton.addEventListener('click', () => moveForward);
-
-// function moveForward(){
-//     console.log("right button clicked");
-// }
+    // Right Button Click Event
+    rightButton.addEventListener('click', () => {
+        // Move Forward
+        // console.log("Right Button");
+    });
 
 /* If You've gotten this far, you're on your own! Although we will give you some hints:
     1. You will need to grab a reference to the carousel, and in it grab the left and right buttons
